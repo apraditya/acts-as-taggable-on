@@ -13,7 +13,7 @@ describe ActsAsTaggableOn::Tagging do
 
     @tagging.should_not be_valid
     
-    @tagging.errors[:tag_id].should == ["can't be blank"]
+    @tagging.errors[:tag].should == ["is invalid"]
   end
 
   it "should not create duplicate taggings" do
